@@ -9,7 +9,7 @@ const port = process.env.BDPORT || 5433
 
 const sequelize = new Sequelize(database,username,password, {
     host: hostname,
-    port,
+    port: port,
     dialect: dialect,
     operatorAliases: false,
     pool: {
